@@ -1,4 +1,5 @@
 <!--Bernardo Silveira dos Santos Castro, 301073235, Section 02-->
 <resources>
-    <string name="app_name">BernardoLab3</string>
+    <string name="app_name" translatable="false">BernardoLab3</string>
+    <string name="welcome">Welcome to my application</string>
 </resources>

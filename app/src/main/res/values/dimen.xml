@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="left">120dp</dimen>
+    <dimen name="top">200dp</dimen>
+</resources>
