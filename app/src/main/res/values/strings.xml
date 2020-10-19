@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">BernardoLab3</string>
     <string name="welcome">Welcome to my application</string>
+    <string name="draw">Drawing</string>
+    <string name="anim">Animation</string>
+    <string name="tweeney">Tweeney</string>
 </resources>

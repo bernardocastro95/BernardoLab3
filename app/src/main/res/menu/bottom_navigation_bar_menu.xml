@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bernardoDraw"
+        android:icon="@drawable/draw"
+        android:title="@string/draw"/>
+    <item
+        android:id="@+id/bernardoAnimation"
+        android:icon="@drawable/animation"
+        android:title="@string/anim"/>
+    <item
+        android:id="@+id/bernardoTweeney"
+        android:icon="@drawable/tweeney"
+        android:title="@string/tweeney"/>
+
+</menu>
