@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         bnv = findViewById(R.id.bernardoNavigation);
         bnv.setOnNavigationItemSelectedListener(navListener);
-        
+
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -32,10 +32,19 @@ public class MainActivity extends AppCompatActivity {
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()){
                         case R.id.bernardoDraw:
+                            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                            ft.replace(R.id.bernardoFragmentDisplay, new BernardoFragment());
+                            ft.commit();
                             return true;
                         case R.id.bernardoAnimation:
+                            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                            transaction.replace(R.id.bernardoFragmentDisplay, new CastroFragment());
+                            transaction.commit();
                             return true;
                         case R.id.bernardoTweeney:
+                            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                            fragmentTransaction.replace(R.id.bernardoFragmentDisplay, new S301073235Fragment());
+                            fragmentTransaction.commit();
                             return true;
                         default:
                             return false;
