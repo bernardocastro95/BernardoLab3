@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -19,10 +20,27 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bnv = findViewById(R.id.bernardoNavigation);
         setContentView(R.layout.activity_main);
 
-        }
-
+        bnv = findViewById(R.id.bernardoNavigation);
+        bnv.setOnNavigationItemSelectedListener(navListener);
+        
+    }
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    switch (item.getItemId()){
+                        case R.id.bernardoDraw:
+                            return true;
+                        case R.id.bernardoAnimation:
+                            return true;
+                        case R.id.bernardoTweeney:
+                            return true;
+                        default:
+                            return false;
+                    }
+                }
+            };
 
 }
