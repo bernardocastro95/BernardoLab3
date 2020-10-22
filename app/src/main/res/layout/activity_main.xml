@@ -6,14 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/bernardoWelcomeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        android:layout_marginStart="@dimen/left"
-        android:layout_marginTop="@dimen/top"
-        />
+
+
+    <FrameLayout
+        android:id="@+id/bernardoFragmentDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bernardoNavigation"

@@ -1,4 +1,5 @@
 <resources>
     <dimen name="left">120dp</dimen>
     <dimen name="top">200dp</dimen>
+    <dimen name="fragment">675dp</dimen>
 </resources>
