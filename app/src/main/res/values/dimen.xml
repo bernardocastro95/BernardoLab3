@@ -6,4 +6,6 @@
     <dimen name="image_height">400dp</dimen>
     <dimen name="image_margin">100dp</dimen>
     <dimen name="button_height">500dp</dimen>
+    <dimen name="last_name_margin">180dp</dimen>
+    <dimen name="names_top">50dp</dimen>
 </resources>

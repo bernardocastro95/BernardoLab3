@@ -7,4 +7,7 @@
     <string name="tweeney">Tweeney</string>
     <string name="info" translatable="false">Bernardo Castro 301073235</string>
     <string name="clear">Clear Draw</string>
+    <string name="name" translatable="false">Bernardo</string>
+    <string name="last_name" translatable="false">Castro</string>
+    <string name="animation">Display Animation</string>
 </resources>
