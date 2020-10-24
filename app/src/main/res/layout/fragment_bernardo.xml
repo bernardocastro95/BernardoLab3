@@ -23,4 +23,11 @@
         android:layout_height="@dimen/image_height"
         android:layout_marginTop="@dimen/image_margin"/>
 
+
+    <Button
+        android:layout_marginTop="@dimen/button_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"/>
+
 </FrameLayout>

@@ -6,4 +6,5 @@
     <string name="anim">Animation</string>
     <string name="tweeney">Tweeney</string>
     <string name="info" translatable="false">Bernardo Castro 301073235</string>
+    <string name="clear">Clear Draw</string>
 </resources>

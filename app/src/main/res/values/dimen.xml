@@ -5,4 +5,5 @@
     <dimen name="center">100dp</dimen>
     <dimen name="image_height">400dp</dimen>
     <dimen name="image_margin">100dp</dimen>
+    <dimen name="button_height">500dp</dimen>
 </resources>

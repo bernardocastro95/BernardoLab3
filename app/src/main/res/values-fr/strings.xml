@@ -4,5 +4,6 @@
     <string name="draw">Dessin</string>
     <string name="anim">Animation</string>
     <string name="tweeney">Tweeney</string>
+    <string name="clear">Effacer le tirage</string>
 
 </resources>
