@@ -10,8 +10,17 @@
 
 
     <TextView
+        android:id="@+id/bernardoFragmentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:layout_marginStart="@dimen/center"/>
+
+    <ImageView
+        android:id="@+id/bernardoImage"
+        android:src="@drawable/house"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="@dimen/image_height"
+        android:layout_marginTop="@dimen/image_margin"/>
 
 </FrameLayout>

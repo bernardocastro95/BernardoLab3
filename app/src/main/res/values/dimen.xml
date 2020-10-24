@@ -2,4 +2,7 @@
     <dimen name="left">120dp</dimen>
     <dimen name="top">200dp</dimen>
     <dimen name="fragment">675dp</dimen>
+    <dimen name="center">100dp</dimen>
+    <dimen name="image_height">400dp</dimen>
+    <dimen name="image_margin">100dp</dimen>
 </resources>
