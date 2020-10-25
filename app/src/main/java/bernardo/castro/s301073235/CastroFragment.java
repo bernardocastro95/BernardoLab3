@@ -1,24 +1,30 @@
 package bernardo.castro.s301073235;
 
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 
 public class CastroFragment extends Fragment {
-
+    private static final int PERMISSION_CODE = 1;
     Button displayAnimation;
-    Animation drawable = null;
+    AnimationDrawable drawable = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,14 +39,18 @@ public class CastroFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        requestPermissions(new String[]{Manifest.permission.CAMERA}, PERMISSION_CODE);
         displayAnimation = getView().findViewById(R.id.bernardoButtonAnimation);
         displayAnimation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                animation();
             }
         });
     }
+
+
+
     private void animation(){
         ImageView image = getView().findViewById(R.id.benrardoAnimationFrame);
 
@@ -48,7 +58,22 @@ public class CastroFragment extends Fragment {
         BitmapDrawable second = (BitmapDrawable) getResources().getDrawable(R.drawable.frame2);
         BitmapDrawable third = (BitmapDrawable) getResources().getDrawable(R.drawable.frame3);
         BitmapDrawable fourth = (BitmapDrawable) getResources().getDrawable(R.drawable.frame4);
-        BitmapDrawable fiftt = (BitmapDrawable) getResources().getDrawable(R.drawable.frame5);
+        BitmapDrawable fifth = (BitmapDrawable) getResources().getDrawable(R.drawable.frame5);
+
+        int duration = 200;
+
+        drawable = new AnimationDrawable();
+        drawable.setOneShot(false);
+        drawable.addFrame(first, duration);
+        drawable.addFrame(second, duration);
+        drawable.addFrame(third, duration);
+        drawable.addFrame(fourth, duration);
+        drawable.addFrame(fifth, duration);
+
+        image.setBackground(drawable);
+
+        drawable.setVisible(true, true);
+        drawable.start();
 
     }
 }
