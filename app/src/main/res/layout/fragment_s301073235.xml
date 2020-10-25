@@ -25,26 +25,26 @@
         android:text="@string/last_name"
         />
 
-    <LinearLayout
+    <FrameLayout
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="400dp">
 
         <ImageView
-
             android:id="@+id/bernardoEarth"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:src="@drawable/earth"/>
 
         <ImageView
+            android:layout_marginTop="200dp"
             android:id="@+id/bernardoMoon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
             android:src="@drawable/moon"
             />
 
-    </LinearLayout>
+    </FrameLayout>
 
     <LinearLayout
         android:layout_marginTop="600dp"

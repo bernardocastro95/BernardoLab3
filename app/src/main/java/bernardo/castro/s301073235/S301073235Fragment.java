@@ -52,6 +52,12 @@ public class S301073235Fragment extends Fragment {
                 animating(R.anim.spinning);
             }
         });
+        stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                stoping(R.anim.spinning);
+            }
+        });
     }
 
     private void animating(int animID){
@@ -60,6 +66,12 @@ public class S301073235Fragment extends Fragment {
         animation.setAnimationListener(new AnimationLister());
         moon.startAnimation(animation);
 
+    }
+    private void stoping(int animID){
+        ImageView moon = getView().findViewById(R.id.bernardoMoon);
+        Animation animation = AnimationUtils.loadAnimation(getContext(), animID);
+        animation.setAnimationListener(new AnimationLister());
+        moon.setAnimation(null);
     }
     class AnimationLister implements Animation.AnimationListener {
 
