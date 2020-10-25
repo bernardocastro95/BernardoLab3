@@ -9,6 +9,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -16,6 +20,8 @@ public class S301073235Fragment extends Fragment {
 
     TextView name, lastName;
     float rotateLeft = 45, rotateRight = -45;
+    ImageView earth, moon;
+    Button start, stop;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,5 +41,41 @@ public class S301073235Fragment extends Fragment {
         lastName = getView().findViewById(R.id.bernardoLastName);
         name.setRotation(rotateLeft);
         lastName.setRotation(rotateRight);
+        earth = getView().findViewById(R.id.bernardoEarth);
+        moon = getView().findViewById(R.id.bernardoMoon);
+        start = getView().findViewById(R.id.bernardoStartTween);
+        stop = getActivity().findViewById(R.id.bernardoStopTween);
+
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                animating(R.anim.spinning);
+            }
+        });
+    }
+
+    private void animating(int animID){
+        ImageView moon = getView().findViewById(R.id.bernardoMoon);
+        Animation animation = AnimationUtils.loadAnimation(getContext(), animID);
+        animation.setAnimationListener(new AnimationLister());
+        moon.startAnimation(animation);
+
+    }
+    class AnimationLister implements Animation.AnimationListener {
+
+        @Override
+        public void onAnimationStart(Animation animation) {
+
+        }
+
+        @Override
+        public void onAnimationEnd(Animation animation) {
+
+        }
+
+        @Override
+        public void onAnimationRepeat(Animation animation) {
+
+        }
     }
 }
