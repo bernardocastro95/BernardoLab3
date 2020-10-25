@@ -9,8 +9,16 @@
     android:background="@color/backgroundFragment2">
 
    <Button
+       android:id="@+id/bernardoButtonAnimation"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:text="@string/animation"/>
+
+
+   <ImageView
+       android:id="@+id/benrardoAnimationFrame"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/animation_height"
+       android:layout_marginTop="@dimen/animation_top"/>
 
 </FrameLayout>

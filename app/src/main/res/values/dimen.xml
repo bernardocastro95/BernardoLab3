@@ -8,4 +8,6 @@
     <dimen name="button_height">500dp</dimen>
     <dimen name="last_name_margin">180dp</dimen>
     <dimen name="names_top">50dp</dimen>
+    <dimen name="animation_height">500dp</dimen>
+    <dimen name="animation_top">70dp</dimen>
 </resources>
