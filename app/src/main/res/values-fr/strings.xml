@@ -9,5 +9,6 @@
     <string name="speed">La vitesse</string>
     <string name="stop">Arrêtez</string>
     <string name="units">Unités p/s</string>
+    <string name="start">Début</string>
 
 </resources>

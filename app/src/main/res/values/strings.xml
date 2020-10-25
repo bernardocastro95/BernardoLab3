@@ -13,4 +13,5 @@
     <string name="speed">Speed</string>
     <string name="stop">Stop</string>
     <string name="units">Units p/s</string>
+    <string name="start">Start</string>
 </resources>

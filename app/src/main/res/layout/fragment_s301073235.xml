@@ -25,4 +25,43 @@
         android:text="@string/last_name"
         />
 
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+
+            android:id="@+id/bernardoEarth"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/earth"/>
+
+        <ImageView
+            android:id="@+id/bernardoMoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/moon"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="600dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/bernardoStartTween"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"/>
+        <Button
+            android:id="@+id/bernardoStopTween"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"/>
+    </LinearLayout>
+
 </FrameLayout>
