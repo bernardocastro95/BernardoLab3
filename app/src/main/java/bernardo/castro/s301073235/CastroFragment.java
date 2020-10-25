@@ -1,5 +1,6 @@
 package bernardo.castro.s301073235;
 
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -42,5 +43,12 @@ public class CastroFragment extends Fragment {
     }
     private void animation(){
         ImageView image = getView().findViewById(R.id.benrardoAnimationFrame);
+
+        BitmapDrawable first = (BitmapDrawable) getResources().getDrawable(R.drawable.frame1);
+        BitmapDrawable second = (BitmapDrawable) getResources().getDrawable(R.drawable.frame2);
+        BitmapDrawable third = (BitmapDrawable) getResources().getDrawable(R.drawable.frame3);
+        BitmapDrawable fourth = (BitmapDrawable) getResources().getDrawable(R.drawable.frame4);
+        BitmapDrawable fiftt = (BitmapDrawable) getResources().getDrawable(R.drawable.frame5);
+
     }
 }
