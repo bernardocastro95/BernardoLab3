@@ -23,7 +23,7 @@ import android.widget.Toast;
 
 public class CastroFragment extends Fragment {
     private static final int PERMISSION_CODE = 1;
-    Button displayAnimation;
+    Button displayAnimation, stop;
     AnimationDrawable drawable = null;
 
     @Override
@@ -39,12 +39,19 @@ public class CastroFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        requestPermissions(new String[]{Manifest.permission.CAMERA}, PERMISSION_CODE);
         displayAnimation = getView().findViewById(R.id.bernardoButtonAnimation);
+        stop = getView().findViewById(R.id.bernardoStopButton);
         displayAnimation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                requestPermissions(new String[]{Manifest.permission.CAMERA}, PERMISSION_CODE);
                 animation();
+            }
+        });
+        stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                animationStop();
             }
         });
     }
@@ -75,5 +82,9 @@ public class CastroFragment extends Fragment {
         drawable.setVisible(true, true);
         drawable.start();
 
+    }
+    private void animationStop(){
+        drawable.stop();
+        drawable.setVisible(false, false);
     }
 }

@@ -6,5 +6,8 @@
     <string name="tweeney">Tweeney</string>
     <string name="clear">Effacer le tirage</string>
     <string name="animation">Afficher l\'animation</string>
+    <string name="speed">La vitesse</string>
+    <string name="stop">Arrêtez</string>
+    <string name="units">Unités p/s</string>
 
 </resources>

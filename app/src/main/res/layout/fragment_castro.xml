@@ -21,4 +21,29 @@
        android:layout_height="@dimen/animation_height"
        android:layout_marginTop="@dimen/animation_top"/>
 
+   <LinearLayout
+       android:layout_marginTop="@dimen/layout_buttons"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/bernardoSpeedButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/speed"/>
+
+      <Button
+          android:id="@+id/bernardoStopButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/stop"/>
+      <Button
+          android:id="@+id/bernardoUnitsButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/units"/>
+
+   </LinearLayout>
+
+
+
 </FrameLayout>

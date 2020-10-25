@@ -10,4 +10,5 @@
     <dimen name="names_top">50dp</dimen>
     <dimen name="animation_height">500dp</dimen>
     <dimen name="animation_top">70dp</dimen>
+    <dimen name="layout_buttons">600dp</dimen>
 </resources>

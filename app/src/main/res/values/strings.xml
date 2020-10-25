@@ -10,4 +10,7 @@
     <string name="name" translatable="false">Bernardo</string>
     <string name="last_name" translatable="false">Castro</string>
     <string name="animation">Display Animation</string>
+    <string name="speed">Speed</string>
+    <string name="stop">Stop</string>
+    <string name="units">Units p/s</string>
 </resources>
