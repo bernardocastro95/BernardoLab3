@@ -18,16 +18,39 @@
 
     <ImageView
         android:id="@+id/bernardoImage"
-        android:src="@drawable/house"
         android:layout_width="match_parent"
         android:layout_height="@dimen/image_height"
         android:layout_marginTop="@dimen/image_margin"/>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <Button
+        android:id="@+id/bernardoClearDraw"
         android:layout_marginTop="@dimen/button_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/clear"/>
+    <Button
+        android:id="@+id/bernardoStartDraw"
+        android:layout_marginTop="@dimen/button_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drawButton"/>
+    <Button
+        android:id="@+id/bernardoColor"
+        android:layout_marginTop="@dimen/button_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/color"/>
+    <Button
+        android:id="@+id/bernardoThickness"
+        android:layout_marginTop="@dimen/button_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thickness"/>
+</LinearLayout>
+
 
 </FrameLayout>

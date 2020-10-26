@@ -10,5 +10,8 @@
     <string name="stop">Arrêtez</string>
     <string name="units">Unités p/s</string>
     <string name="start">Début</string>
+    <string name="drawButton">Dessiner</string>
+    <string name="color">Couleur</string>
+    <string name="thickness">Épaisseur</string>
 
 </resources>

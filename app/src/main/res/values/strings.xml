@@ -14,4 +14,7 @@
     <string name="stop">Stop</string>
     <string name="units">Units p/s</string>
     <string name="start">Start</string>
+    <string name="drawButton">Draw</string>
+    <string name="color">Color</string>
+    <string name="thickness">Thickness</string>
 </resources>
