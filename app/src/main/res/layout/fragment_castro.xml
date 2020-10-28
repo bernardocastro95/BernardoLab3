@@ -12,7 +12,8 @@
        android:id="@+id/bernardoButtonAnimation"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="@string/animation"/>
+       android:text="@string/animation"
+       android:textStyle="bold|italic"/>
 
 
    <ImageView
@@ -29,18 +30,21 @@
           android:id="@+id/bernardoSpeedButton"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/speed"/>
+          android:text="@string/speed"
+          android:textStyle="bold|italic"/>
 
       <Button
           android:id="@+id/bernardoStopButton"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/stop"/>
+          android:text="@string/stop"
+          android:textStyle="bold|italic"/>
       <Button
           android:id="@+id/bernardoUnitsButton"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/units"/>
+          android:text="@string/units"
+          android:textStyle="bold|italic"/>
 
    </LinearLayout>
 

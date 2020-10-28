@@ -14,7 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/info"
-        android:layout_marginStart="@dimen/center"/>
+        android:layout_marginStart="@dimen/center"
+        android:textStyle="italic"/>
 
     <ImageView
         android:id="@+id/bernardoImage"
@@ -31,25 +32,29 @@
         android:layout_marginTop="@dimen/button_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/clear"/>
+        android:text="@string/clear"
+        android:textStyle="italic"/>
     <Button
         android:id="@+id/bernardoStartDraw"
         android:layout_marginTop="@dimen/button_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/drawButton"/>
+        android:text="@string/drawButton"
+        android:textStyle="italic"/>
     <Button
         android:id="@+id/bernardoColor"
         android:layout_marginTop="@dimen/button_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/color"/>
+        android:text="@string/color"
+        android:textStyle="italic"/>
     <Button
         android:id="@+id/bernardoThickness"
         android:layout_marginTop="@dimen/button_height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/thickness"/>
+        android:text="@string/thickness"
+        android:textStyle="italic"/>
 </LinearLayout>
 
 

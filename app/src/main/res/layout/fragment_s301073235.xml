@@ -15,6 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name"
+        android:textStyle="bold"
         />
     <TextView
         android:id="@+id/bernardoLastName"
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/last_name"
+        android:textStyle="bold"
         />
 
     <FrameLayout
@@ -56,12 +58,14 @@
             android:id="@+id/bernardoStartTween"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/start"/>
+            android:text="@string/start"
+            android:textStyle="bold"/>
         <Button
             android:id="@+id/bernardoStopTween"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/stop"/>
+            android:text="@string/stop"
+            android:textStyle="bold"/>
     </LinearLayout>
 
 </FrameLayout>
