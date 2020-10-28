@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
+//Bernardo Silveira Dos Santos Castro, 301073235, Section 02
 public class S301073235Fragment extends Fragment {
 
     TextView name, lastName;

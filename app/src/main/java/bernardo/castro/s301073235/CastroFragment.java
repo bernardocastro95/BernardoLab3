@@ -20,7 +20,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-
+//Bernardo Silveira Dos Santos Castro, 301073235, Section 02
 public class CastroFragment extends Fragment {
     private static final int PERMISSION_CODE = 1;
     Button displayAnimation, stop;

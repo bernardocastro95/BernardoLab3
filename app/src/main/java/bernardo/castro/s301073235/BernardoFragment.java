@@ -31,7 +31,7 @@ import android.widget.ImageView;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-
+//Bernardo Silveira Dos Santos Castro, 301073235, Section 02
 public class BernardoFragment extends Fragment  {
 
     ImageView image;
